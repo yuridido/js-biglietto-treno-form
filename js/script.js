@@ -50,5 +50,5 @@ disattiva.addEventListener("click", function() {
 
 // FUNZIONI
 function casuale(min,max) {
-    return Math.floor(Math.random() * (max - min + 1)) + 1;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
