@@ -17,22 +17,27 @@ var disattiva = document.getElementById('annulla');
 
 attiva.addEventListener("click", function() {
     document.getElementById('nominativo').innerHTML = document.getElementById('nome').value;
-    // document.getElementById('offerta').innerHTML = document.getElementById('eta').value;
-    document.getElementById('carrozza').innerHTML = casuale(1,9);
-    document.getElementById('codice').innerHTML = casuale(90000,99999);
+    document.getElementById('carrozza').innerHTML = casuale(1, 9);
+    document.getElementById('codice').innerHTML = casuale(90000, 99999);
     var km = document.getElementById('km').value;
     var scontistica = (document.getElementById('eta').value);
     var sconto = 0;
+    var scrittaSconto = "Nessuno Sconto";
     if (scontistica == "over") {
         sconto = 40;
+        scrittaSconto = "Sconto Over 65";
     } else if (scontistica == "min"){
         sconto = 20;
+        scrittaSconto = "Sconto Minorennis";
     }
+    document.getElementById('tipo-offerta').innerHTML = scrittaSconto;
     document.getElementById('costo').innerHTML = (prezzoBase / 100 * (100 - sconto)*km).toFixed(2);
-
+    document.getElementById('sezione-bot').classList = "show"
 });
 
-
+disattiva.addEventListener("click", function() {
+    document.getElementById('sezione-bot').classList = "hidden"
+});
 
 
 
