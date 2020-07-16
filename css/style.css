@@ -4,31 +4,108 @@
     box-sizing: border-box;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container-flex {
+    display: flex;
+}
+
 h2 {
+    color: mintcream;
     text-align: center;
     text-transform: uppercase;
     margin: 20px;
 }
 
+h6 {
+    color: crimson;
+    font-size: 18px;
+}
+
 .container {
     width: 100vw;
-    background-color: orange;
+    background-color: crimson;
     height: 100vh;
     padding: 70px 0;
 }
 
-#form {
-    height: 300px;
-    margin-bottom: 50px;
+.campi {
+    justify-content: center;
+    text-align: center;
 }
+/* FINE PARTE GENERICA */
 
-#biglietto {
-    height: 250px;
+/* PRIMA SEZIONE */
+#form {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding: 20px 100px;
+    border-radius: 10px;
+
 }
 
 
 .scheda {
-    width: 80%;
+    width: 70%;
     background-color: MintCream;
     margin: 0 auto;
+    box-shadow: 3px 3px 20px; #eeeeee;
+}
+
+
+.bottoni {
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    background-color: white;
+    color: crimson;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input, select {
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+/* INIZIO SECONDA SEZIONE  */
+#biglietto {
+    padding: 10px;
+}
+
+.box-nome {
+    float: left;
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    background-color: gray;
+}
+
+#tab-biglietto {
+
+    float: left;
+    height: 250px;
+    font-size: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+th, td {
+    padding: 40px 80px;
 }
