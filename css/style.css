@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.container {
+    width: 100vw;
+    background-color: orange;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+#form {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+#biglietto {
+    height: 250px;
+}
+
+
+.scheda {
+    width: 80%;
+    background-color: MintCream;
+    margin: 0 auto;
+}
