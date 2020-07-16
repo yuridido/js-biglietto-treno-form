@@ -15,6 +15,10 @@
     display: flex;
 }
 
+.hidden {
+    opacity: 0;
+}
+
 h2 {
     color: mintcream;
     text-align: center;
@@ -28,9 +32,9 @@ h6 {
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     background-color: crimson;
-    height: 100vh;
+    height: 100%;
     padding: 70px 0;
 }
 
@@ -90,6 +94,7 @@ input, select {
 }
 
 .box-nome {
+    opacity: inherit;
     float: left;
     width: 250px;
     height: 250px;
@@ -98,7 +103,7 @@ input, select {
 }
 
 #tab-biglietto {
-
+    opacity: inherit;
     float: left;
     height: 250px;
     font-size: 20px;

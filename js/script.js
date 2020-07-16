@@ -8,4 +8,26 @@
 // Prezzo calcolato
 // Categoria selezionata dall'utente
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
-// Buon lavoro e buon viaggio! (edited) 
+
+
+var prezzoBase = 0.21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FUNZIONI
+function casuale(min,max) {
+    return Math.floor(Math.random() * (max - min + 1)) + 1;
+}
