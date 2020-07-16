@@ -10,11 +10,27 @@
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
 
-var prezzoBase = 0.21
+var prezzoBase = 0.21;
+var attiva = document.getElementById('genera');
+var disattiva = document.getElementById('annulla');
 
 
+attiva.addEventListener("click", function() {
+    document.getElementById('nominativo').innerHTML = document.getElementById('nome').value;
+    // document.getElementById('offerta').innerHTML = document.getElementById('eta').value;
+    document.getElementById('carrozza').innerHTML = casuale(1,9);
+    document.getElementById('codice').innerHTML = casuale(90000,99999);
+    var km = document.getElementById('km').value;
+    var scontistica = (document.getElementById('eta').value);
+    var sconto = 0;
+    if (scontistica == "over") {
+        sconto = 40;
+    } else if (scontistica == "min"){
+        sconto = 20;
+    }
+    document.getElementById('costo').innerHTML = (prezzoBase / 100 * (100 - sconto)*km).toFixed(2);
 
-
+});
 
 
 
